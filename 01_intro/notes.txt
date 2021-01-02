@@ -4,4 +4,55 @@ steps to install GO (in linux)
 3   export PATH
     $ export PATH=$PATH:/usr/local/go/bin
 
---------------------------------
+
+---------USEFUL LINKS-----------------------
+
+https://github.com/GoesToEleven/GolangTraining
+https://gobyexample.com/
+https://golang.org/ref/spec
+https://golang.org/doc/effective_go.html
+https://godoc.org/
+
+---------------WHY GO?-----------------------
+
+1   fastest growing programming language
+2   highest paid programming language
+3   efficient compilation
+4   efficient execution
+5   ease of programming
+6   takes advantage of multi-core concurrency compiled networks
+7   portable
+
+----------WHERE TO USE GO?------------------
+
+1   google does, web services
+2   networking (http, udp, tcp)
+3   concurrency, parallelism
+4   systems
+5   automation, command-line tools
+6   crypto
+7   image processing
+
+--------COMPANIES USING GO-----------------
+
+1   Google
+2   YouTube
+3   Apple
+4   DropBox
+5   Docker
+6   BitBucket
+7   DigitalOcean
+8   bitly
+9   Clever
+10  BBC
+11  Mozilla Firefox
+12  Heroku
+13  MongoDB
+14  IBM
+15  Intel
+16  GitHub
+17  Twitter
+18  Facebook
+19  Uber
+20  tumblr.
+

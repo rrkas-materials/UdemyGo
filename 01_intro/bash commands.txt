@@ -1,0 +1,20 @@
+pwd
+ls
+ls -la
+clear
+cd <dir>
+cd ..       or      cd ../
+mkdir <directory list, separated by spaces>
+touch <file name with extension>
+nano <file name with extension>
+    ctrl + x
+    y
+cat <file name with extension>
+chmod <permissions> <file name with extension>
+    read    4
+    write   3
+    execute 1
+env
+rm <list of folder or file name with extension>
+rm -rf <list of folder or file name with extension>
+grep
