@@ -1,8 +1,13 @@
 steps to install GO (in linux)
 1   download .tar.gz file
 2   $ sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
-3   export PATH
-    $ export PATH=$PATH:/usr/local/go/bin
+3   $ mkdir ~/.go
+4   export PATH
+    $ GOROOT=/usr/local/go
+    $ GOPATH=~/.go
+    $ PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+5   $ sudo update-alternatives --install "/usr/bin/go" "go" "/usr/local/go/bin/go" 0
+    $ sudo update-alternatives --set go /usr/local/go/bin/go
 
 
 ---------USEFUL LINKS-----------------------
@@ -56,3 +61,28 @@ https://godoc.org/
 19  Uber
 20  tumblr.
 
+------------GO WORKSPACE--------------------
+
+one folder
+    bin
+    pkg
+    src
+
+------------------IDE-----------------------
+GoLand
+VS Code
+    $ go get -v github.com/nsf/gocode
+Atom.io
+Sublime
+
+--------------GO COMMANDS--------------------
+$ go help [command]
+$ go version
+$ go env
+$ go run <go file path>
+$ go get <package/ repo path>
+$ go fmt ./...
+$ go build
+$ go install
+building cross-platform outputs:
+https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
