@@ -84,5 +84,64 @@ $ go get <package/ repo path>
 $ go fmt ./...
 $ go build
 $ go install
+$ go list -m all
 building cross-platform outputs:
 https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
+
+------------------GIT & GITHUB (VCS)----------------------
+VCS: version control system
+repo: contains code
+
+1   create repo
+2   create folder with same name in local system
+    [WORKSPACE]
+        github.com
+            [USERNAME]
+                [REPO NAME]
+3   $ git init
+4   add .gitignore
+5   $ git add --all         OR      git add .
+6   $ git commit -m "[MESSAGE]"
+7   $ git remote add origin [REPO URL]
+8   $ git push -u origin master
+9   $ git status
+
+---------exploring git
+
+cloning github repo:
+    $ go get github.com/[USERNAME]/[REPO NAME]
+    OR
+    Download zip from github.com
+    OR
+    $ git clone [REPO URL (http or SSH)]
+
+
+--------Using SSH------
+1   Generating SSH key
+    $ ssh-keygen -t rsa
+2   Copy public key
+    $ cat [SSH file name (with .pub)]
+3   Setting in github
+    a   Go to github settings (profile settings not repo settings)
+    b   create new SSH key
+    c   paste key and type title
+4   Use git commands
+
+----------------PACKAGE MANAGEMENT------------------------
+
+https://pkg.go.dev/
+
+
+--------------------------GO MODULE------------------------
+
+$ go mod init domain/username/repo
+$ go test
+go.mod and go.sum MUST be checked into VCS for ensuring code is not changed.
+
+
+-------------------Upgrading dependencies---------------------
+$ go get golang.org/x/text
+$ go get rsc.io/sampler
+$ go list -m -versions rsc.io/sampler
+$ go get rsc.io/sampler@v1.3.1
+
