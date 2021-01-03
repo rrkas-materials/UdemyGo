@@ -17,6 +17,7 @@ https://gobyexample.com/
 https://golang.org/ref/spec
 https://golang.org/doc/effective_go.html
 https://godoc.org/
+https://play.golang.org/
 
 ---------------WHY GO?-----------------------
 

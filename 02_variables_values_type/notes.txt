@@ -1,0 +1,83 @@
+in Go, the format matters.
+
+control flows:
+1   sequential
+2   loop/ iterative
+3   conditional/ branching
+
+---------variatic parameter-------
+
+//takes unlimited number of parameters of any kind
+func foo(a ...interface{}){
+
+}
+
+interface{} : empty interface
+everything is of type interface{}
+
+------------PACKAGE----------------
+package: just like folder-file orgaized code
+
+notation:   package.identifier
+Ex:         fmt.Println()
+
+-----------------NOTE--------------------
+
+n, err := fmt.Println("Hello")
+fmt.Println(n)              
+//error: err is not used
+
+n, _ := fmt.Println("Hello")
+fmt.Println(n)              
+//no error
+
+_ is used to throw away returns
+
+
+------------Code Pollution---------------
+unused variables are not allowed.
+
+
+--------------identifier-------------------
+name of program entities (variables, types)
+
+identifier = letter { letter | unicode_digit }
+
+Ex: a
+    _x9
+    ThisVariableIsExported
+    αβ      (copied from google, no symbol in keyboard)
+
+predeclared identifiers:
+Types:
+	bool byte complex64 complex128 error float32 float64
+	int int8 int16 int32 int64 rune string
+	uint uint8 uint16 uint32 uint64 uintptr
+
+Constants:
+	true false iota
+
+Zero value:
+	nil
+
+Functions:
+	append cap close complex copy delete imag len
+	make new panic print println real recover
+
+------------------------keyboards--------------------------------
+    break        default      func         interface    select
+    case         defer        go           map          struct
+    chan         else         goto         package      switch
+    const        fallthrough  if           range        type
+    continue     for          import       return       var
+
+------------operators and punctuators----------------------------
+        +    &     +=    &=     &&    ==    !=    (    )
+        -    |     -=    |=     ||    <     <=    [    ]
+        *    ^     *=    ^=     <-    >     >=    {    }
+        /    <<    /=    <<=    ++    =     :=    ,    ;
+        %    >>    %=    >>=    --    !     ...   .    :
+            &^          &^=
+
+
+
