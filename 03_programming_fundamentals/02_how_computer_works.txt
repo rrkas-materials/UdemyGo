@@ -1,0 +1,47 @@
+Circuits and switches-----------------------------------------
+    - computers run on electricity
+    - electricity can be ON or OFF
+coding scheme-------------------------------------------------
+    - assign meaning to ON and OFF states
+    - ON        1
+    - OFF       0
+binary digits-------------------------------------------------
+    - binary digits : 0, 1
+    - 1 digit         2 states        0   1
+    - 2 digits        4 states        00  01  10  11
+    - 3 digits        8 states        000 001 010 011 100 101 110 111
+2^n-----------------------------------------------------------
+    - n bits        2^n states
+ascii---------------------------------------------------------
+    - used to be most popular coding sceme
+UTF-8---------------------------------------------------------
+    - covers most language of world
+    - most popular coding sceme
+bits, bytes, kb, mb, gb, tb-----------------------------------
+    1 bit               1 binary digit  (0 or 1)
+    1 byte              8 bits
+    1 kilobyte(kb)      1024 bytes
+    1 megabyte(mb)      1024 kb
+    1 gigabyte(gb)      1024 mb
+    1 terabyte(tb)      1024 gb
+5 generations of computers------------------------------------
+    1st generation
+        vaccum tubes
+        Example:
+            ENIAC           [Electronic Numerical Integrator and Computer]
+            UNIVAC          [Universal Automatic Computer]
+    2nd generation
+        transistor
+        smaller
+        Example:
+            IBM 1620
+            IBM 7094
+    3rd generation
+        silicon wafers (Integrated Circuits (ICs))
+    4th generation
+        Microprocessors
+    5th generation
+        networking
+        ai
+moore's law---------------------------------------------------
+    Moore observed that the number of transistors on a computer chip was doubling about every 18–24 months.
