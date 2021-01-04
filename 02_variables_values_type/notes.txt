@@ -79,5 +79,12 @@ Functions:
         %    >>    %=    >>=    --    !     ...   .    :
             &^          &^=
 
+--------------------------var-----------------------
+Use for:
+    zero value
+    package level scope
 
 
+----------------------type conversion----------------------------
+
+var a type1 = type1(b) //b is of another type

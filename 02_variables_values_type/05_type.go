@@ -18,6 +18,13 @@ func main() {
 	fmt.Print(z, " ")
 	fmt.Printf("%T\n", z)
 	rawString := `I said, "Hello!"`
+	rawString2 := `I said,
+	"Hello!
+	 
+	Anyone Home?"`
 	interpretedString := "abc"
-	fmt.Println(rawString, interpretedString)
+	fmt.Println(rawString)
+	fmt.Println(rawString2)
+	fmt.Println(interpretedString)
+
 }
