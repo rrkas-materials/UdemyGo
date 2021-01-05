@@ -20,3 +20,86 @@ for loop----------------------------
         for{
             statements
         }
+
+if ---------------------------------
+
+    syntax 1:   same as normal simple if
+        if cond {
+            statements
+        }
+    syntax 2:   init + cond
+        if init; cond {
+            statements
+        }
+    syntax 3:   if (normal or with init) - else
+        if (cond | init; cond) {
+            statements
+        } else {
+            statements
+        }
+    syntax 3:   if - else if - else
+        if (cond | init; cond) {
+            statements
+        } else if (cond | init; cond) {
+            statements
+        } else {
+            statements
+        }
+
+
+switch---------------------------------------------
+
+    syntax 1:   like a collection of if else, only statements of first case whose condition is true will be executed
+        switch {
+            case cond1, cond1a, cond1b ... :
+                statements
+                fallthrough     //goes to next case 2's statements
+            case cond2:
+                statements
+                fallthrough     //goes to next case 3's statements
+            case cond3:
+                statements
+                fallthrough     //goes to next case 4's statements
+            ...
+            case condn:
+                statements
+                fallthrough     //goes to next default's statements
+            default:
+                statements
+        }
+        Note:   missing condition corresponds to the value true
+                default is executed when no case is true
+                default case is optional
+                there can be only 1 default case
+                fallthroughs are optional
+                fallthrough of cases (statements of next case will be executed from 1st true case)
+                the true case/ fallthrough-ed case in which fallthrough is not used, all following cases will be ignored.
+                case statements can have 1/more conditions
+    syntax 2:   switch on a value
+        switch variable {
+            case value1, value1a, value 1b ... :
+                statements
+            case value2:
+                statements
+            case value3:
+                statements
+            ...
+            case valuen:
+                statements
+            default:
+                statements
+        }
+        Note:   default and fallthrough are optional
+                case statements can have 1/more values
+    syntax 3:   Type switch
+        Example:
+        switch v := i.(type) {
+        case T:
+            // here v has type T
+        case S:
+            // here v has type S
+        default:
+            // no match; here v has the same type as i
+        }
+
+
