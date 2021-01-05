@@ -1,0 +1,17 @@
+Array--------------------------------------------
+    An array is a numbered sequence of elements of a single type, called the element type. 
+    The number of elements is called the length of the array and is never negative.
+Slice--------------------------------------------
+    A slice is a descriptor for a contiguous segment of an underlying array and 
+    provides access to a numbered sequence of elements from that array. 
+    A slice type denotes the set of all slices of arrays of its element type. 
+    The number of elements is called the length of the slice and is never negative. 
+    The value of an uninitialized slice is nil.
+Map----------------------------------------------
+    A map is an unordered group of elements of one type, called the element type, 
+    indexed by a set of unique keys of another type, called the key type. 
+    The value of an uninitialized map is nil.
+Struct-------------------------------------------
+    A struct is a sequence of named elements, called fields, each of which has a name and a type. 
+    Field names may be specified explicitly (IdentifierList) or implicitly (EmbeddedField). 
+    Within a struct, non-blank field names must be unique.
