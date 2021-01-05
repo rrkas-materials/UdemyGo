@@ -1,0 +1,22 @@
+control flow------------------------
+    sequence
+    loops
+        for
+    conditionals
+        switch
+        if
+
+for loop----------------------------
+
+    syntax 1:   same as normal for loop
+        for [init]; [cond]; [post] {    //init, cond and post are optionals
+            statements
+        }
+    syntax 2:   same as while loop
+        for cond {
+            statements
+        }
+    syntax 3:   same as infinite loop
+        for{
+            statements
+        }
