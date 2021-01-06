@@ -1,0 +1,7 @@
+A pointer type denotes the set of all pointers to variables of a given type, called the base type of the pointer. 
+The value of an uninitialized pointer is nil.
+
+when to use pointer:
+    to pass big chunk of data           (similar to pass by reference in C++)
+    chnage value at other address       (similar to pass by address in C++)
+
