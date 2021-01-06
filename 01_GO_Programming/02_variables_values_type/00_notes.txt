@@ -1,5 +1,7 @@
 in Go, the format matters.
 
+NOTE: a value can be of more than 1 type.
+
 control flows:
 1   sequential
 2   loop/ iterative
