@@ -1,0 +1,50 @@
+json---------------------------------------------
+
+https://pkg.go.dev/encoding/json
+https://golang.org/pkg/encoding/json/
+
+
+marshal     : encoding
+unmarshal   : decoding
+
+
+writer---------------------------------------------
+https://pkg.go.dev/io#Writer
+
+package:    io
+
+docs:
+type Writer interface {
+	Write(p []byte) (n int, err error)
+}
+
+Writer is the interface that wraps the basic Write method.
+
+Write writes len(p) bytes from p to the underlying data stream. 
+It returns the number of bytes written from p (0 <= n <= len(p)) and 
+any error encountered that caused the write to stop early. 
+Write must return a non-nil error if it returns n < len(p). 
+Write must not modify the slice data, even temporarily.
+
+Implementations must not retain p.
+
+SORT-----------------------------------------------------
+https://pkg.go.dev/sort
+
+package:	sort
+
+used to sort objects
+in-built sort types: ints, strings
+
+sorting custom types:
+function: sort.Sort
+NOTE: the type that is to be sorted MUST implement the following methods:
+		func (T Type) Len() int
+		func (T Type) Swap(i, j int)
+		func (T Type) Less(i, j int) bool
+
+BCRYPT---------------------------------------------------
+https://pkg.go.dev/golang.org/x/crypto/bcrypt
+encrypting sensitive data and checking the password-hashKey
+it is a password hashing function
+
