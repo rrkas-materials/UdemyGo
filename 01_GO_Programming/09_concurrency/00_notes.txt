@@ -1,0 +1,16 @@
+Go is used to take advantage of multiple core.
+
+concurrency VS parallelism-----------------------------------
+
+parallelism:    multiple threads of same process running simultenously on separate CPUs
+
+concurrency:    design pattern
+                way of writing code to run in parallel
+
+
+
+
+
+
+
+
