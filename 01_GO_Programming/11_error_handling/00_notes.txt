@@ -1,0 +1,70 @@
+Why does Go not have exceptions?
+    We believe that coupling exceptions to a control structure, as in the try-catch-finally idiom, 
+    results in convoluted code. It also tends to encourage programmers to label too many ordinary errors, 
+    such as failing to open a file, as exceptional.
+
+    Go takes a different approach. For plain error handling, Go's multi-value returns 
+    make it easy to report an error without overloading the return value. A canonical error type, 
+    coupled with Go's other features, makes error handling pleasant but quite different from that in other languages.
+
+    Go also has a couple of built-in functions to signal and recover from truly exceptional conditions. 
+    The recovery mechanism is executed only as part of a function's state being torn down after an error, 
+    which is sufficient to handle catastrophe but requires no extra control structures and, when used well, 
+    can result in clean error-handling code.
+
+    See the Defer, Panic, and Recover article for details. Also, the Errors are values blog post describes one 
+    approach to handling errors cleanly in Go by demonstrating that, since errors are just values, 
+    the full power of Go can be deployed in error handling.
+
+https://blog.golang.org/error-handling-and-go
+
+
+type error------------------------------------
+type error interface {
+	Error() string
+}
+The error built-in interface type is the conventional interface for representing an error condition, 
+with the nil value representing no error.
+
+
+https://pkg.go.dev/errors
+
+always check errors, dont throw them away with _
+
+
+
+log vs print-------------------------------------
+- log gives timestamp along with message
+- log messages can be exported to a file
+- log is more effective and informative than fmt
+- prefer log over panic
+
+
+fmt.Print family    :       just prints the error
+log.Print family    :       prints error with timestamp
+log.fatal family    :       prints error with timestamp and exits the program.
+                            defered functions are not run
+log.panic family    :       panics the system and prints the messages with timestamp
+                            defered functions are run in reverse order
+
+
+panic and recover-------------------------------------------
+panic
+The panic built-in function stops normal execution of the current goroutine. 
+When a function F calls panic, normal execution of F stops immediately. 
+Any functions whose execution was deferred by F are run in the usual way, and then F returns to its caller. 
+To the caller G, the invocation of F then behaves like a call to panic, 
+terminating G's execution and running any deferred functions. 
+This continues until all functions in the executing goroutine have stopped, in reverse order. 
+At that point, the program is terminated with a non-zero exit code. 
+This termination sequence is called panicking and can be controlled by the built-in function recover.
+
+recover
+The recover built-in function allows a program to manage behavior of a panicking goroutine. 
+Executing a call to recover inside a deferred function (but not any function called by it) 
+stops the panicking sequence by restoring normal execution and retrieves the error value passed to the call of panic. 
+If recover is called outside the deferred function it will not stop a panicking sequence. 
+In this case, or when the goroutine is not panicking, or if the argument supplied to panic was nil, recover returns nil. 
+Thus the return value from recover reports whether the goroutine is panicking.
+
+https://blog.golang.org/defer-panic-and-recover
