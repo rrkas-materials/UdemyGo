@@ -44,5 +44,24 @@ $ godoc -src package [Identifier]
 
 godoc.org------------------------------------------------------------------------
 
+publishing own package on godoc.org
+    $ git add .
+    $ git commit -m "rmath package done"
+    $ git push
+    search "github.com/rrkas/UdemyGo/tree/master/01_GO_Programming/12_writing_docs/02_godoc_upload/rmath"
+    no package found. you can download it by visiting "https://pkg.go.dev/github.com/rrkas/UdemyGo/tree/master/01_GO_Programming/12_writing_docs/02_godoc_upload/rmath"
+    click on that link. Request "github.com/rrkas/UdemyGo/tree/master/01_GO_Programming/12_writing_docs/02_godoc_upload/rmath"?
+    click on request button
+    it may take few minutes to reflect in godoc.org
+
+
+documenting----------------------------------------------------------------------
+
+comments in go programs work as documentation in godoc
+comments should start with the identifier or package name
+
+if a lot is in docs, write all in doc.go file
+ex: fmt package
+
 
 
