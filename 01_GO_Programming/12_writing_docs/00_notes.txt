@@ -1,0 +1,48 @@
+https://golang.org/doc/cmd
+
+go doc---------------------------------------------------------------------------
+allows reading documentation in command line
+$ go doc
+    gives the docs of package you are in (not main)
+$ go doc Sum
+    gives the docs of Sum function of the package you ae in
+$ go doc ..Sum
+    Note: this command is used when you are in the package's directory (.) and trying to access its identifiers
+    Note: general command : go doc package.Identifier
+    Ex:   go doc fmt.Print
+    gives the docs of Sum function of the package a
+$ go doc . Sum
+    Note: this command is used when you are in the package's directory (.) and trying to access its identifiers
+    Note: general command : go doc package Identifier
+    Ex:   go doc fmt Print
+    gives the docs of Sum function of the package a
+
+
+
+godoc----------------------------------------------------------------------------
+godoc extracts and generates documentation for Go packages.
+
+$ godoc -http=:8080
+or
+$ godoc -http :8080
+    open "localhost:8080" in browser
+
+$ godoc package
+    shows detailed docs of package
+    Ex: godoc .             //gives docs of the package you are in
+    Ex: godoc fmt
+
+$ godoc package Identifier
+    shows detailed docs of package.Identifier
+    Ex: godoc . Sum         //gives docs of the Sum
+    Ex: godoc fmt Print
+
+$ godoc -src package [Identifier]
+    shows source code of package
+    Ex: godoc -src . //gives docs of the package you are in
+    Ex: godoc -src . Sum
+
+godoc.org------------------------------------------------------------------------
+
+
+
