@@ -1,0 +1,8 @@
+testing----------------------------------------------
+manual check of validation of code
+
+- testing file must end wih "_test.go"
+- testing file must be in same package
+- test function must be of signature : func TestIdentifier(*testing.T)
+
+table tests =  multiple tests
