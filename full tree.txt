@@ -1,0 +1,225 @@
+.
+├── 00_materials_and_books
+│   ├── Go in Action (Intermediate to advanced).pdf
+│   ├── Go Programming by Example.pdf
+│   ├── Go Web Programming.pdf
+│   ├── Introducing Go_ Build Reliable, Scalable Programs.pdf
+│   ├── Presentations
+│   │   ├── 00 Why Go (Golang).pptx
+│   │   ├── 01 Getting Started with Go (Golang).pptx
+│   │   ├── 02 Go IDE_s (Golang Editors).pptx
+│   │   ├── 03 Hello World Golang.pptx
+│   │   ├── 04 go get (golang).pptx
+│   │   ├── 05 Packages _ Docs (code organization) Golang.pptx
+│   │   ├── 06 Using Libraries (using code in other packages).pptx
+│   │   ├── 07 Go Build, Go Install, Import.pptx
+│   │   ├── 08 Review.pptx
+│   │   ├── 09 resources, help, variadic, BNF, reading documentation.pptx
+│   │   ├── 10 variables, zero value, scope, capitalization, blank identifier.pptx
+│   │   ├── 11 constants, iota, memory addresses, pointers.pptx
+│   │   ├── 12 remainders, loops, range, switch statements, conditionals.pptx
+│   │   ├── 13 fmt package, variadic.pptx
+│   │   ├── 14 types, len, concat, strconv, conversion, math, rand, docs.pptx
+│   │   ├── 15.5_exercises.pdf
+│   │   ├── 15 slice, map, new, make, struct.pptx
+│   │   ├── 16 funcs, func expressions, closure, recursion, the stack.pptx
+│   │   ├── 17 types.pptx
+│   │   ├── 18 methods, embedded types.pptx
+│   │   ├── 19 interfaces.pptx
+│   │   ├── 20.5 Guest Readers and Writers.pptx
+│   │   ├── 20 readers _ writers.pptx
+│   │   ├── 21 Go Routines.pptx
+│   │   ├── 22 Review.pptx
+│   │   ├── 23 Ardan Labs Hardcore Go.pptx
+│   │   ├── 24 JSON.pptx
+│   │   ├── 25 packages.pptx
+│   │   ├── 26 Networking.pptx
+│   │   ├── 27 TCP Servers.pptx
+│   │   ├── 28 TCP Servers, bufio Scanners, strings.Fields, concurrency.pptx
+│   │   ├── 29 HTTP.pptx
+│   │   ├── 30 HTTP Server.pptx
+│   │   ├── 31 Routing _ Restful.pptx
+│   │   ├── 32 Serving Files.pptx
+│   │   ├── 33 Errata.pptx
+│   │   ├── 34 Templates.pptx
+│   │   ├── 35 Passing Data.pptx
+│   │   ├── 36 Cookies, Sessions, Context.pptx
+│   │   ├── 37 TLS _ HTTPS.pptx
+│   │   ├── 38 Photo Blog.pptx
+│   │   ├── 39 EXIF.pptx
+│   │   ├── 40 Golang Appengine.pptx
+│   │   ├── 41 app engine, services, APIs, github.pptx
+│   │   ├── 42 Custom Domains.pptx
+│   │   ├── 43 Gorilla Sessions Memory Leak Fix.pptx
+│   │   ├── 44 Julien Schmidt Router.pptx
+│   │   ├── 45 Memcache.pptx
+│   │   ├── 46 Datastore.pptx
+│   │   ├── 47 AJAX.pptx
+│   │   ├── 48 App Engine Channels.pptx
+│   │   ├── 49 Google Cloud Storage.pptx
+│   │   ├── 50 Putty and WinSCP.pptx
+│   │   ├── 51 Go Proverbs.pptx
+│   │   ├── 52 fanout fanin.pptx
+│   │   ├── Javascript to Go.docx
+│   │   ├── README.md
+│   │   ├── Resources.docx
+│   │   ├── todo.docx
+│   │   └── xx for later.pptx
+│   └── The Way To Go_ A Thorough Introduction To The Go Programming Language.pdf
+├── 01_GO_Programming
+│   ├── 01_intro
+│   │   ├── bash commands.txt
+│   │   ├── code
+│   │   │   ├── code.exe
+│   │   │   ├── hello
+│   │   │   └── hello.go
+│   │   ├── moduleExample
+│   │   │   ├── go.mod
+│   │   │   ├── go.sum
+│   │   │   ├── hello.go
+│   │   │   └── hello_test.go
+│   │   └── notes.txt
+│   ├── 02_variables_values_type
+│   │   ├── 00_notes.txt
+│   │   ├── 01_hello_world.go
+│   │   ├── 02_packages.go
+│   │   ├── 03_identifier_keywords_operators.go
+│   │   ├── 04_var.go
+│   │   ├── 05_type.go
+│   │   ├── 06_zero_value.go
+│   │   ├── 07_fmt_package.go
+│   │   ├── 08_creating_own_types.go
+│   │   └── 09_type_conversion_and_casting.go
+│   ├── 03_programming_fundamentals
+│   │   ├── 00_notes.txt
+│   │   ├── 01_bool_type.go
+│   │   ├── 02_how_computer_works.txt
+│   │   ├── 03_numeric_types.go
+│   │   ├── 04_string_type.go
+│   │   ├── 05_constants.go
+│   │   ├── 06_iota.go
+│   │   └── 07_bit_shifting.go
+│   ├── 04_control_flow
+│   │   ├── 00_notes.txt
+│   │   ├── 01_for-init_condition_post.go
+│   │   ├── 02_nested_for.go
+│   │   ├── 03_for.go
+│   │   ├── 04_break_and_continue.go
+│   │   ├── 05_printing_ascii.go
+│   │   ├── 06_if.go
+│   │   ├── 07_if_else.go
+│   │   ├── 08_switch.go
+│   │   └── 09_boolean_operators.go
+│   ├── 05_grouping_data
+│   │   ├── 00_notes.txt
+│   │   ├── 01_array.go
+│   │   ├── 02_slice.go
+│   │   ├── 03_map.go
+│   │   └── 04_struct.go
+│   ├── 06_functions
+│   │   ├── 00_notes.txt
+│   │   ├── 01_basics.go
+│   │   ├── 02_variadic_parameters.go
+│   │   ├── 03_defer.go
+│   │   ├── 04_methods.go
+│   │   ├── 05_interface_polymorphism.go
+│   │   ├── 06_anonymous_functions.go
+│   │   ├── 07_func_expression.go
+│   │   ├── 08_returning_func.go
+│   │   ├── 09_callbacks.go
+│   │   ├── 10_recursion.go
+│   │   └── 11_named_returns.go
+│   ├── 07_pointers
+│   │   ├── 00_notes.txt
+│   │   ├── 01_basic.go
+│   │   ├── 02_usage.go
+│   │   └── 03_method_sets.go
+│   ├── 08_using_packages
+│   │   ├── 00_notes.txt
+│   │   ├── 01 JSON and marhsalling.pdf
+│   │   ├── 02_json.go
+│   │   ├── 03_writer_interface.go
+│   │   ├── 04_sort.go
+│   │   └── 05_bcrypt.go
+│   ├── 09_concurrency
+│   │   ├── 00_notes.txt
+│   │   ├── 01_go_routine_1.go
+│   │   ├── 02_go_routine_2.go
+│   │   ├── 03_waitgroup.go
+│   │   ├── 04_race_condition.go
+│   │   ├── 05_mutex.go
+│   │   └── 06_atomic.go
+│   ├── 10_channels
+│   │   ├── 00_notes.txt
+│   │   ├── 01_channel_example_1.go
+│   │   ├── 02_channel_example_2.go
+│   │   ├── 03_channel_example_3.go
+│   │   ├── 04_channel_example_4.go
+│   │   ├── 05_channel_example_5.go
+│   │   ├── 06_directional_channel.go
+│   │   ├── 07_using_channels.go
+│   │   ├── 08_ranging_channel.go
+│   │   ├── 09_select.go
+│   │   ├── 10_select_with_ok_bool.go
+│   │   ├── 10_select_with_ok_int.go
+│   │   ├── 11_select_with_ok.go
+│   │   ├── 12_fan_in_example1.go
+│   │   ├── 13_fan_in_example2.go
+│   │   ├── 14_fan_out_example1.go
+│   │   ├── 15_context_background.go
+│   │   ├── 16_context_cancel_example1.go
+│   │   ├── 17_context_cancel_example2.go
+│   │   ├── 18_context_cancel_example3.go
+│   │   └── 19_context_cancel_example4.go
+│   ├── 11_error_handling
+│   │   ├── 00_notes.txt
+│   │   ├── 01_checking_errors_example1.go
+│   │   ├── 02_checking_errors_example2.go
+│   │   ├── 03_checking_errors_example3.go
+│   │   ├── 03_names.txt
+│   │   ├── 04_checking_errors_example4.go
+│   │   ├── 05_log_fatal.go
+│   │   ├── 06_fmt_println.go
+│   │   ├── 07_log_println.go
+│   │   ├── 08_creating_log_files.go
+│   │   ├── 08_log.txt
+│   │   ├── 09_log_panic.go
+│   │   ├── 10_panic.go
+│   │   ├── 11_recover_example1.go
+│   │   ├── 12_recover_example2.go
+│   │   ├── 13_recover_example3.go
+│   │   └── 14_errors_with_info.go
+│   ├── 12_writing_docs
+│   │   ├── 00_notes.txt
+│   │   ├── 01_go_doc
+│   │   │   ├── multiply.go
+│   │   │   └── sum.go
+│   │   └── 02_godoc_upload
+│   │       └── rmath
+│   │           ├── multiply.go
+│   │           └── sum.go
+│   ├── 13_testing_benchmarking
+│   │   ├── 00_notes.txt
+│   │   ├── 01_basic_testing
+│   │   │   ├── main.go
+│   │   │   └── main_test.go
+│   │   ├── 02_table_tests
+│   │   │   ├── main.go
+│   │   │   └── main_test.go
+│   │   ├── 03_example_tests
+│   │   │   ├── main.go
+│   │   │   └── maths
+│   │   │       ├── main.go
+│   │   │       └── main_test.go
+│   │   └── 04_benchmarking
+│   │       ├── main.go
+│   │       └── rrka
+│   │           ├── cover.out
+│   │           ├── main.go
+│   │           ├── main_test.go
+│   │           └── output.html
+│   └── Course Outline.pdf
+├── full tree.txt
+└── README.md
+
+27 directories, 195 files

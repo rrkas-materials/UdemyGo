@@ -36,9 +36,8 @@ func receive(e, o, q <-chan int) {
 			if !ok {
 				fmt.Println("From !ok", i, ok)
 				return
-			} else {
-				fmt.Println("From ok", i, ok)
 			}
+			fmt.Println("From ok", i, ok)
 		}
 	}
 }

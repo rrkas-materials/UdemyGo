@@ -15,7 +15,7 @@ func (p Person) String() string {
 	return fmt.Sprintf("%v: %v", p.Name, p.Age)
 }
 
-//age wise sorting
+//PersonsByAge is used for age wise sorting
 type PersonsByAge []Person
 
 //sort.Interface implementations
@@ -23,8 +23,7 @@ func (p PersonsByAge) Len() int           { return len(p) }
 func (p PersonsByAge) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 func (p PersonsByAge) Less(i, j int) bool { return p[i].Age < p[j].Age } // the deciding condition
 
-//---------------------------------------------------------------------------------------------------------------
-//name wise sorting
+//PersonsByName is used for name wise sorting
 type PersonsByName []Person
 
 //sort.Interface implementations

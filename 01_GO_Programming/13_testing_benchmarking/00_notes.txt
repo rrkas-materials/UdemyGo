@@ -6,3 +6,24 @@ manual check of validation of code
 - test function must be of signature : func TestIdentifier(*testing.T)
 
 table tests =  multiple tests
+
+
+
+linting----------------------------------------------
+$ go get -u github.com/golang/lint/golint
+$ golint ./...
+$ go vet ./...
+
+
+
+benchmarking------------------------------------------
+$ go test -bench .
+$ go test -bench Greet
+
+
+coverage----------------------------------------------
+$ go test -cover
+$ go test -coverprofile cover.out
+$ go tool cover -html=cover.out
+$ go tool cover -html=cover.out -o output.html
+

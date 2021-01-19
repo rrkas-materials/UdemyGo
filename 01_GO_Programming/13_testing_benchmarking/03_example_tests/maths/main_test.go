@@ -11,9 +11,9 @@ func ExampleSum2() {
 }
 
 /*
-	using TestXxx(...)
+	testing a package
 	$ go test
 
-	using ExampleXxx()
+	testing the package and all its subpackages
 	$ go test ./...
 */
