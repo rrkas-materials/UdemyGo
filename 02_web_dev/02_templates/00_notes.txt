@@ -1,0 +1,34 @@
+templates : 
+example:
+    letter form to be personalized for each receiptant
+- allow to personalize web page
+
+
+packages:
+    text/template       basic template library
+    html/template       text/template + other functionalities
+
+export output to html:
+    $ go run main.go > index.html
+
+template comment:
+    {{/* a comment */}}
+        a comment; discarded.
+        may contain newlines.
+        comments donot nest and must start and end at the delimiters.
+
+
+nested templates : 
+    define:
+        {{define "TemplateName"}}
+        insert contents here
+        {{end}}
+    use:
+        {{template "TemplateName"}}
+
+passing data to template:
+    {{.}} receives the data from go files
+    {{template "TemplateName" .}}   will receive the data and replace .
+
+
+
