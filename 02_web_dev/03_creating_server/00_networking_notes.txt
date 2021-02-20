@@ -1,0 +1,67 @@
+Web Programming Synonymous Terms:
+    router
+    request router
+    multiplexer
+    mux
+    servemux
+    server
+    http router
+    http request router
+    http multiplexer
+    http mux
+    http servemux
+    http server
+
+
+Request & response
+    Request and response messages are similar. Both messages consist of:
+        a request/response line
+        zero or more header lines
+        a blank line (ie, CRLF by itself)
+        an optional message body
+
+    HTTP request
+        Request
+            request line
+            headers
+            optional message body
+        Request-Line
+            Method SP Request-URI SP HTTP-Version CRLF
+        example request line:
+            GET /path/to/file/index.html HTTP/1.1
+
+    HTTP response
+        Reponse
+            status line
+            headers
+            optional message body
+        Status-Line
+            HTTP-Version SP Status-Code SP Reason-Phrase CRLF
+        example status line:
+            HTTP/1.1 200 OK
+
+    inspect
+        $ curl -v url
+    example
+        $ curl -v golang.org
+    output
+        *   Trying 2404:6800:4007:805::2011:80...
+        * TCP_NODELAY set
+        * Connected to golang.org (2404:6800:4007:805::2011) port 80 (#0)
+        > GET / HTTP/1.1
+        > Host: golang.org
+        > User-Agent: curl/7.65.1
+        > Accept: */*
+        >
+        * Mark bundle as not supporting multiuse
+        < HTTP/1.1 302 Found
+        < Date: Fri, 19 Feb 2021 14:38:41 GMT
+        < Content-Type: text/html; charset=utf-8
+        < Content-Length: 42
+        < Location: https://golang.org/
+        < Via: 1.1 google
+        <
+        <a href="https://golang.org/">Found</a>.
+
+        * Connection #0 to host golang.org left intact
+

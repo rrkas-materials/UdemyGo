@@ -1,0 +1,15 @@
+https://pkg.go.dev/net
+https://pkg.go.dev/net/http
+
+Request for comments in networking
+    An RFC (Request for Comments) is a pure technical document published by the Internet Engineering Task Force (IETF). 
+    Request for Comments (RFCs) are mainly used to develop a "standard" network protocol, 
+    a function of a network protocol or any feature which is related with network communication.
+    RFC 7230
+        https://tools.ietf.org/html/rfc7230
+
+IETF
+    
+    https://www.ietf.org/
+
+
